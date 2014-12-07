@@ -46,7 +46,7 @@ plot4 <- function(){
     #set legend
     legend("top", lty = 1, col=c("black", "red", "blue"),
            legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),
-           bty = "n")
+           bty = "n", cex = 0.8)
 
     #Plot 4
     plot(datetime, Global_reactive_power, type = "l",
