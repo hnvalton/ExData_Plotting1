@@ -19,6 +19,8 @@ plot3 <- function(){
     #set time locale to english
     Sys.setlocale("LC_TIME", "English")
     
+    #set the file
+    png(filename = "plot3.png", width = 480, height = 480)
     #create a plot of type l (lines)
     with(DT, plot(DateTime, Sub_metering_1, type = "l",
          main = "",
@@ -32,7 +34,7 @@ plot3 <- function(){
     legend("topright", lty = 1, col=c("black", "red", "blue"),
            legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
     #Copy to file
-    dev.copy(png, file = "plot3.png")
+#    dev.copy(png, file = "plot3.png")
     dev.off()
     
     
